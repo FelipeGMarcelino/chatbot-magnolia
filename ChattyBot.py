@@ -1,16 +1,6 @@
 #packages needed
 import time
 
-# Magnolia introduction
-print()
-print("Oi! Meu nome é Magnólia.")
-time.sleep(1)
-print("Eu fui criada em 1997.")
-time.sleep(2)
-print()
-
-# Magnolia asks questions
-
 # Name
 def name():
     print("Qual o seu nome?")
@@ -48,6 +38,7 @@ def favorite_number():
         i += 1
     print("Gostou?!")
 
+# Quiz
 def test():
     print("Vamos ver se você me conhece direito.")
     print()
@@ -63,10 +54,12 @@ def test():
         print("Por favor, tente de novo.")
         test()
 
+# Exit
 def end():
     print()
     print("É isso por hoje. Tchauzinho!")
 
+# Return to menu
 def back_to_hub():
     print()
     print("Deseja retornar ao menu de rotinas?")
@@ -78,6 +71,7 @@ def back_to_hub():
     else:
         end()
 
+# Routine menu
 def routine_hub():
     print("Qual rotina você deseja ativar?")
     print("1. Nome.")
@@ -105,4 +99,13 @@ def routine_hub():
     if routine == 5:
         end()
 
+# Magnolia introduction
+print()
+print("Oi! Meu nome é Magnólia.")
+time.sleep(1)
+print("Eu fui criada em 1997.")
+time.sleep(2)
+print()
+
+# Magnolia routines
 routine_hub()
